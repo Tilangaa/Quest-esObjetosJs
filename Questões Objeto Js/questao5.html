@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    
+    <script>
+
+        const pessoa = {
+            nome: 'João',
+            idade: 30,
+            email: 'joao@gmail.com',
+            endereco: 'Rua das Flores, 123, São Paulo',
+            cumprimentar: function(nome) {
+        return `Olá, meu nome é ${nome}.`;
+        }
+    };
+
+        function imprimirChavesValores(obj) {
+        for (let chave in obj) {
+        console.log(`${chave}: ${obj[chave]}`);
+        }
+    }
+
+        imprimirChavesValores(pessoa);
+
+    </script>
+
+</body>
+</html>
